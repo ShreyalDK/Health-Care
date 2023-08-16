@@ -1,0 +1,70 @@
+
+body{
+    background: #fff;
+}
+.background-content h1{
+    text-align: center;
+    padding: 1.3rem 3rem;
+    color: #02b31a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.our-doctors{
+    padding: 4rem 7%;
+}
+.our-doctors h1{
+    color: rgb(9, 180, 223);
+    text-align: center;
+    font-size: 40px;
+    color: var(--mainclr);
+    margin-bottom: 30px;
+}
+.main-doctor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.inner-doctor{
+    flex: 1 1 300px;
+    position: relative;
+}
+.inner-doctor img{
+    width: 100%;
+    border-radius: 5%;
+
+}
+.inner-doctor h3{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.inner-doctor p{
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.inner-doctor img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgb(0,0,0,0.3);
+}
+.doc-icons{
+    position: relative;
+    bottom: 2%;
+    display: flex;
+}
+
+.inner-doctors h3{
+    color: forestgreen;
+    text-align: center;
+    font-size: 30px;
+    color: var(--mainclr);
+    margin-bottom: 30px;
+}
+.inner-doctors p{
+    font-size: 1.2rem;
+    line-height: 1;
+}

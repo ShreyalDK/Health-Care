@@ -1,0 +1,106 @@
+body,html {
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+
+#background_img {
+    width: 494px;
+    height: 100%;
+    float: left;
+    margin-left: 150px;
+    background: url("../images/loginFull.png")  left no-repeat;
+}
+
+
+.loginForm{
+    float: right;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 25%;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.loginForm label,h3,input,img {
+    display: block;
+}
+
+.loginForm img {
+    margin: 0 auto;
+}
+
+
+.loginForm label {
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: normal;
+}
+
+.loginForm input[type="submit"] {
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color:#1E56A0;
+    color:black;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 8px;
+    width: 300px;
+}
+
+.loginForm input[type="text"],input[type="password"] {
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background:transparent;
+    border-bottom: solid #1E56A0 ;
+    font-size: large;
+    margin-top: 5px;
+}
+
+#loginButton:hover{
+    background-color: #1E56A0;
+    color: white;
+}
+
+
+span {
+    color: #1E56A0;
+    font-weight: bolder;
+}
+
+.loginForm h3{
+    font-size: 45px;
+    margin: 20px auto;
+    margin-top: 5px;
+}
+
+.loginForm p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.loginForm p a{
+    text-decoration: underline;
+    color: #1E56A0;
+    font-weight: bolder;
+}
+
+.loginForm p a:hover{
+    color: black;
+}
+
+#emergency {
+    background: #ce2029;
+    width: 300px;
+    margin: 0px auto 15px;
+    padding: 8px;
+}
+
+#emergency p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+}
