@@ -37,52 +37,14 @@ CREATE TABLE `appointments` (
   `email` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `appointments`
---
 
-INSERT INTO `appointments` (`appointment_id`, `username`, `pname`, `reason`, `date`, `time`, `email`) VALUES
-(63, 'shreyalP', 'shreyal', 'cold', '2022-12-10', '10:00-12:30 A.M', 'shreyaldkumar84347@gmail.com'),
-(64, 'sdk123', 'shreyal', 'cold', '2022-12-11', '10:00-12:30 A.M', 'shreyaldkumar84347@gmail.com'),
-(66, 'sdk123', 'yash', 'cold', '2022-12-10', '6:00-8:30 P.M', 'shreyaldkumar84347@gmail.com'),
-(69, 'abhi123', 'abhi', 'cold', '2022-12-10', '10:00-12:30 A.M', 'abhishek.vmt9731@gmail.com'),
-(71, 'dineshNaik', 'dinesh', 'cold', '2022-12-10', '10:00-12:30 A.M', 'shreydeepdinesh@rediffmail.com'),
-(72, 'dineshNaik', 'dinesh', 'cold', '2022-12-10', '8:00-10:00 A.M', 'dnaiksheetal72@gmail.com'),
-(73, 'sdk123', 'shreyal', 'cold', '2022-12-16', '8:00-10:00 A.M', 'shreyaldkumar84347@gmail.com');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
 
 CREATE TABLE `user` (
   `username` varchar(20) NOT NULL,
   `password` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Dumping data for table `user`
---
 
-INSERT INTO `user` (`username`, `password`) VALUES
-('a', '12345'),
-('aaa123', '123'),
-('abhi123', '12345'),
-('dineshNaik', '12345'),
-('liamD', '12345'),
-('s12', '12345'),
-('sdk123', '12345'),
-('shreyal12', '12345'),
-('shreyalP', '12345');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `appointments`
---
 ALTER TABLE `appointments`
   ADD PRIMARY KEY (`appointment_id`),
   ADD KEY `usernameCons` (`username`);
@@ -114,6 +76,3 @@ ALTER TABLE `appointments`
   ADD CONSTRAINT `usernameCons` FOREIGN KEY (`username`) REFERENCES `user` (`username`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
